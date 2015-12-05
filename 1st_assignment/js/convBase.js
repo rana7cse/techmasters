@@ -5,8 +5,8 @@
         'কাঁঠাল','লিচু','জাম','আম','চমচম','বরফি','রসমালাই','সিঙ্গারা','পুড়ি','চপ'
     ];
 
-    function convBase10ToAny(str,target) {
-        var inp_t = String(str);
+    function convBase10ToAny(num,target) {
+        var inp_t = num;
         var tmp_res = "";
         while (1 <= inp_t) {
             tmp_res = num[Math.floor( inp_t % target )]+tmp_res;
