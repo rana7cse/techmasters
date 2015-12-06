@@ -33,7 +33,7 @@
     }
 
     if(base_convertX(100,8,10) == base_convert(100,8,10)){
-        echo "Yes poko you did it :)";
+        echo "! yes !";
     }else{
-        echo "Something wrong in your logic or else poko ! :(";
+        echo "Something wrong in your logic or else ! :(";
     }
