@@ -72,20 +72,23 @@ print_r($res);
 
 #half_piramid
 
-for($m = 0 ; $m < 7; $m++){
-   if($m <= 3 ){
-       for($j = 0; $j <= $m; $j++){
-            echo "*";
-       }
-   }else{
-       for($j = $m; $j < 7; $j++){
-           echo "*";
-       }
-   }
-    echo "\n";
+function makePiramid($col){
+    $rows = ($col*2) - 1;
+    for($i = 1; $i <= $rows; $i++){
+        if($i <= $col){
+            for($m = 1; $m <= $i; $m++){
+                echo "*";
+            }
+        }else{
+            for($m = $i; $m <= $rows; $m++){
+                echo "*";
+            }
+        }
+        echo "\n";
+    }
 }
 
-
+makePiramid(5);
 
 
 
