@@ -1,6 +1,7 @@
 (function(){
 
     "use strict";
+//function to get mark as grad;
 
     function makeResult(mark){
         switch(mark){
@@ -62,5 +63,14 @@
         }
     }
 
-    console.log(makeResult(80));
+    console.log("Your Result is : "+makeResult(80));
+
+    /// num divided by 7
+    var result = [];
+    for(var i = 1; i <= 20000; i++){
+        if(i%7 == 0){
+            result.push(i);
+        }
+    }
+    console.log("total no divided by 7 from 1 to 20000 : " + result.length);
 })();

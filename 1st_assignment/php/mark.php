@@ -60,3 +60,34 @@
     }
 
 echo makeResult(60);
+
+# num divided by 7
+$res = [];
+for($i = 1; $i <= 20000; $i++){
+    if($i%7 == 0){
+        array_push($res,$i);
+    }
+}
+print_r($res);
+
+#half_piramid
+
+for($m = 0 ; $m < 7; $m++){
+   if($m <= 3 ){
+       for($j = 0; $j <= $m; $j++){
+            echo "*";
+       }
+   }else{
+       for($j = $m; $j < 7; $j++){
+           echo "*";
+       }
+   }
+    echo "\n";
+}
+
+
+
+
+
+
+
