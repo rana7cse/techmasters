@@ -29,5 +29,5 @@
         return convBase10ToAny( deci, target_base );
     }
 
-    console.log( convBase("POKOPOKO",32,16) );
+    console.log( convBase(100,8,16) );
 })();
